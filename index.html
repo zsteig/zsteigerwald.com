@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>draggable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-start
+        }
+
+        .container .element {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body onload="move('element')">
+    
+    <div class="container">
+        <div class="element" style="background: red;"></div>
+        <div class="element" style="background: green;"></div>
+        <div class="element" style="background: hotpink;"></div>
+        <div class="element" style="background: turquoise;"></div>
+        <div class="element" style="background: blue;"></div>
+    </div>
+
+
+    <script>
+        var chooseElement;
+
+        const move = function(element){
+            const elements = document.querySelectorAll(".element")
+
+            elements.forEach(element => {
+                element.addEventListener("mousedown", () => {
+                    element.style.position = "absolute"
+                    chooseElement = element
+
+                    document.onmousemove = (e) => {
+                        var x = e.pageX
+                        var y = e.pageY
+
+                        chooseElement.style.left = x - 50 + "px"
+                        chooseElement.style.top = y -50+ "px"
+
+                        console.log(chooseElement)
+                    }
+                })
+            })
+            document.onmouseup = function(e){
+                chooseElement = null;
+            }
+        }
+    </script>
+</body>
+</html>

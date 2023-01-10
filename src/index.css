@@ -1,13 +1,196 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    background: #242526;
+    font-family: roboto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'Magnite_Lavingo';
+    src: local('Magnite_Lavingo'), url(./fonts/Magnite\ Lavingo.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
 }
+
+.font-face-name {
+    font-family: 'Magnite_Lavingo';
+}
+
+:root {
+    --bg: #151616;
+    --bg-accent: #484a4d;
+    --text-color: #dadce1;
+    --nav-size: 60px;
+    --border: 1px solid #474a4d;
+    --border-radius: 8px;
+    --speed: 500ms;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbar {
+    height: var(--nav-size);
+    background-color: var(--bg);
+    border-bottom: var(--border);
+}
+
+.navbar-nav {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    width: calc(var(--nav-size) * 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button {
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    text-align: center;
+}
+
+.icon-button:hover {
+    filter: brightness(1.5);
+}
+
+.space {
+    margin: 0;
+    padding-top: "";
+    padding-bottom: "";
+    height: 50px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 56px;
+    width: 150px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.menu-item {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: all var(--speed);
+    padding: 0rem;
+  }
+
+  .menu-item:hover {
+    filter: blur(2px);
+  }
+
+  .menu-item-text {
+    pointer-events: none;
+    transform: translateY(-220%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: white;
+  }
+
+/* Film Roll Menu */
+    .roll {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        transform: translateX(-45%);
+    }
+
+    .film-frames {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background-color: #774e37;
+        align-items: stretch;
+        padding: 2rem;
+    }
+    
+    .frame {
+        background: #6e4229;
+        width: 150px;
+        height: 95px;
+        border-radius: 8px;
+    }
+    
+    .frame-blank {
+        background: transparent;
+        width: 150px;
+        height: 48px;
+    }
+    
+    .left-sprocket {
+        position: absolute;
+        left: 6%;
+        top: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .right-sprocket {
+        position: absolute;
+        right: 6%;
+        top: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+    
+    .notch {
+        background: #242526;
+        z-index: 1;
+        width: 15px;
+        height: 10px;
+        border-radius: 25%;
+        border: 1px solid #533320;
+    }
+    
+    .tab {
+        position: absolute;
+        top: 730px;
+        background: #774e37;
+        width: 214px;
+        height: 175px;
+        border-radius: 5px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 47% 100%, 44% 98%, 43% 47%, 38% 28%, 30% 15%, 21% 7%, 0 0%);
+    }

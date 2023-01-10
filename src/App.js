@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     <Navbar>
-      <img src={logo}></img>
+      <img src={logo} alt=""></img>
       <NavItem icon="≣">
         <DropdownMenu></DropdownMenu>
       </NavItem>
@@ -83,28 +83,28 @@ function DropdownMenu() {
     <div className="roll">
       <div className="film-frames">
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + MotorsportBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + MotorsportBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>Motorsport</a>
           </div>
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + StreetBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + StreetBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>Street</a>
           </div>
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + SportsBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + SportsBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>Sports</a>
           </div>
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + PortraitBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + PortraitBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>Portrait</a>
           </div>
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + WildlifeBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + WildlifeBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>Wildlife</a>
           </div>
           <div className='frame-blank'></div>
           <div className='frame'>
-            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + AboutBG + ")" }}></a>
+            <a href='/#' className='menu-item' style={{ backgroundImage: "url(" + AboutBG + ")" }}> </a>
             <a href='/#' className='menu-item-text'>About</a>
           </div>
       </div>

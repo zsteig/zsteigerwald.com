@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2f26afc6.css",
+    "main.js": "./static/js/main.c91f64f5.js",
+    "static/media/Magnite Lavingo.otf": "./static/media/Magnite Lavingo.75b509e29809189d47e9.otf",
+    "static/media/SportsBG.jpg": "./static/media/SportsBG.6c0bf24a0c923d8abb74.jpg",
+    "static/media/AboutBG.jpg": "./static/media/AboutBG.d97e7fb4f2d66aa24c0b.jpg",
+    "static/media/PortraitBG.jpg": "./static/media/PortraitBG.fade8cd5dd8d9a2ae18c.jpg",
+    "static/media/MotorsportBG.jpg": "./static/media/MotorsportBG.45736f00d05508827e79.jpg",
+    "static/media/StreetBG.jpg": "./static/media/StreetBG.606510b1dc3daf4e2ed5.jpg",
+    "static/media/WildlifeBG.jpg": "./static/media/WildlifeBG.8488c393575af8726822.jpg",
+    "static/media/Logo.png": "./static/media/Logo.08f7849f0086ddc80e2e.png",
+    "index.html": "./index.html",
+    "main.2f26afc6.css.map": "./static/css/main.2f26afc6.css.map",
+    "main.c91f64f5.js.map": "./static/js/main.c91f64f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f26afc6.css",
+    "static/js/main.c91f64f5.js"
+  ]
+}

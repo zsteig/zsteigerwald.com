@@ -1,5 +1,6 @@
 {
   "name": "zsteigerwald.com-main",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
